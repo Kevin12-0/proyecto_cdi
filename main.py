@@ -20,3 +20,7 @@ app.add_middleware(
 async def read_root():
     return {"Hello": "World"}
 
+
+@app.get("/children")
+async def get_children():
+    return {"Esto es": "una prueba"}
