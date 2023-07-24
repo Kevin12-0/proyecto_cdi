@@ -4,6 +4,8 @@ from typing import List
 from typing import Union
 import os
 
+model = os.path.join("model/levelIngles.joblib")
+
 app = FastAPI()
 
 origins = ["*"]
