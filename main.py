@@ -25,7 +25,8 @@ async def get_hello_world():
 
 @app.post(
     "/prediction/"
-    + "{name}/{email}/{null}/{almost_null}/{basic}/{intermediate}/{advanced}/{native}"
+    + "{name}/{email}/{null}/{almost_null}/{basic}/{intermediate}/{advanced}/{native}/"
+    + "{HTML}/{CSS}/{SaSS}/{JS}/{PHP}/{JAVA}/{TS}/{OtraHerramienta}"
 )
 async def postPrediction():
-    pass
+    return "hola"
