@@ -17,6 +17,15 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 @app.get("/")
 async def get_hello_world():
     return {"hello": "world"}
+
+
+@app.post(
+    "/prediction/"
+    + "{name}/{email}/{null}/{almost_null}/{basic}/{intermediate}/{advanced}/{native}"
+)
+async def postPrediction():
+    pass
