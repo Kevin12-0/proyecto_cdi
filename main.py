@@ -241,6 +241,9 @@ class message(BaseModel):
 
 app = FastAPI()
 
+@app.get("/")
+async def holamundo():
+    return "hello world"
 
 @app.post(
     "/hiring/",
