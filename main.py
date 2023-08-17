@@ -26,102 +26,206 @@ origins = ["*"]
 
 
 class inputData(BaseModel):
-    null: float
-    almost_null: float
-    basic: float
-    intermediate: float
-    advanced: float
-    native: float
-    HTML: float
-    CSS: float
-    SaSS: float
-    JS: float
-    PHP: float
-    JAVA: float
-    TS: float
-    OtraHerramienta: float
-    NingunaHerramientaWeb: float
-    React: float
-    Vue: float
-    Angular: float
-    Ember: float
-    Backbone: float
-    Mercury: float
-    OtroFramework: float
-    NingunFramework: float
-    GitHub: float
-    GitLab: float
-    GoogleRepositories: float
-    GitKraken: float
-    OtroControldeVersiones: float
-    NingunControldeVersiones: float
-    Windows: float
-    MacOS: float
-    GNULinux: float
-    OtroOS: float
-    NingunOS: float
-    Azure: float
-    AWS: float
-    Heroku: float
-    GoogleCloud: float
-    DigitalOcean: float
-    OracleCloud: float
-    OtraComputoNube: float
-    NingunaComputoNube: float
-    SaaS: float
-    PaaS: float
-    IaaSHaaS: float
-    BaaS: float
-    DaaS: float
-    OtroTipoDeSoftware: float
-    NingunSoftware: float
-    VSCode: float
-    IntelliJ: float
-    PyCharm: float
-    Xcode: float
-    Eclipse: float
-    SublimeText: float
-    VIM: float
-    OtroIDE: float
-    NingunIDE: float
-    fastapi: float
-    Falcon: float
-    Eve: float
-    Hug: float
-    Webpy: float
-    Flask: float
-    OtraAPI: float
-    NigunaAPI: float
-    JavaScript: float
-    Python: float
-    PHPConsumo: float
-    JavaConsumo: float
-    Ruby: float
-    C: float
-    OtraConsumo: float
-    NingunaConsumo: float
-    JSON: float
-    XML: float
-    HTMLInfo: float
-    CSV: float
-    RSS: float
-    OtroFormato: float
-    NingunFormto: float
-    VariablesEntorno: float
-    Scrum: float
-    Kanban: float
-    XP: float
-    Agile: float
-    Desing: float
-    OtraMAgil: float
-    NingunaMAgil: float
-    Cascada: float
-    Prototipado: float
-    Espiral: float
-    Incremental: float
-    DiseñoRapido: float
-    OtraMTradicional: float
-    NingunaMTradicional: float
+    null: int
+    almost_null: int
+    basic: int
+    intermediate: int
+    advanced: int
+    native: int
+    HTML: int
+    CSS: int
+    SaSS: int
+    JS: int
+    PHP: int
+    JAVA: int
+    TS: int
+    OtraHerramienta: int
+    NingunaHerramientaWeb: int
+    React: int
+    Vue: int
+    Angular: int
+    Ember: int
+    Backbone: int
+    Mercury: int
+    OtroFramework: int
+    NingunFramework: int
+    GitHub: int
+    GitLab: int
+    GoogleRepositories: int
+    GitKraken: int
+    OtroControldeVersiones: int
+    NingunControldeVersiones: int
+    Windows: int
+    MacOS: int
+    GNULinux: int
+    OtroOS: int
+    NingunOS: int
+    Azure: int
+    AWS: int
+    Heroku: int
+    GoogleCloud: int
+    DigitalOcean: int
+    OracleCloud: int
+    OtraComputoNube: int
+    NingunaComputoNube: int
+    SaaS: int
+    PaaS: int
+    IaaSHaaS: int
+    BaaS: int
+    DaaS: int
+    OtroTipoDeSoftware: int
+    NingunSoftware: int
+    VSCode: int
+    IntelliJ: int
+    PyCharm: int
+    Xcode: int
+    Eclipse: int
+    SublimeText: int
+    VIM: int
+    OtroIDE: int
+    NingunIDE: int
+    fastapi: int
+    Falcon: int
+    Eve: int
+    Hug: int
+    Webpy: int
+    Flask: int
+    OtraAPI: int
+    NigunaAPI: int
+    JavaScript: int
+    Python: int
+    PHPConsumo: int
+    JavaConsumo: int
+    Ruby: int
+    C: int
+    OtraConsumo: int
+    NingunaConsumo: int
+    JSON: int
+    XML: int
+    HTMLInfo: int
+    CSV: int
+    RSS: int
+    OtroFormato: int
+    NingunFormto: int
+    VariablesEntorno: int
+    Scrum: int
+    Kanban: int
+    XP: int
+    Agile: int
+    Desing: int
+    OtraMAgil: int
+    NingunaMAgil: int
+    Cascada: int
+    Prototipado: int
+    Espiral: int
+    Incremental: int
+    DiseñoRapido: int
+    OtraMTradicional: int
+    NingunaMTradicional: int
+
+
+class Config:
+    data = [
+        {
+            "Nombre": "example_value",
+            "null": 0,
+            "almost_null": 0,
+            "basic": 0,
+            "intermediate": 0,
+            "advanced": 0,
+            "native": 0,
+            "HTML": 0,
+            "CSS": 0,
+            "SaSS": 0,
+            "JS": 0,
+            "PHP": 0,
+            "JAVA": 0,
+            "TS": 0,
+            "OtraHerramienta": 0,
+            "NingunaHerramientaWeb": 0,
+            "React": 0,
+            "Vue": 0,
+            "Angular": 0,
+            "Ember": 0,
+            "Backbone": 0,
+            "Mercury": 0,
+            "OtroFramework": 0,
+            "NingunFramework": 0,
+            "GitHub": 0,
+            "GitLab": 0,
+            "Google Cloud Sorse Repositories": 0,
+            "GitKraken": 0,
+            "OtroControldeVerciones": 0,
+            "NingunControldeVerciones": 0,
+            "Windows": 0,
+            "MacOS": 0,
+            "GNULinux": 0,
+            "Otro": 0,
+            "NingunOS": 0,
+            "Azure": 0,
+            "AWS": 0,
+            "Heroku": 0,
+            "GoogleCloud": 0,
+            "Digital Ocean": 0,
+            "Oracle Cloud": 0,
+            "OtraComputoNube": 0,
+            "NingunaComputoNube": 0,
+            "SaaS": 0,
+            "PaaS": 0,
+            "IaaS/HaaS": 0,
+            "BaaS": 0,
+            "DaaS": 0,
+            "OtroTipoDeSoftware": 0,
+            "NingunSoftware": 0,
+            "VSCode": 0,
+            "IntelliJ Idea": 0,
+            "PyCharm": 0,
+            "Xcode": 0,
+            "Eclipse": 0,
+            "Sublime Text": 0,
+            "VIM": 0,
+            "OtroIDE": 0,
+            "NingunIDE": 0,
+            "FastAPI": 0,
+            "Falcon": 0,
+            "Eve": 0,
+            "Hug": 0,
+            "Web.py": 0,
+            "Flask": 0,
+            "OtraAPI": 0,
+            "NigunaAPI": 0,
+            "JavaScript": 0,
+            "Python": 0,
+            "PHPConsumo": 0,
+            "JavaConsumo": 0,
+            "Ruby": 0,
+            "C#": 0,
+            "OtraConsumo": 0,
+            "NingunaConsumo": 0,
+            "JSON": 0,
+            "XML": 0,
+            "HTMLInfo": 0,
+            "CSV": 0,
+            "RSS": 0,
+            "OtroFormato": 0,
+            "Ningun Formto": 0,
+            "VariablesEntorno": 0,
+            "Scrum": 0,
+            "Kanban": 0,
+            "XP": 0,
+            "Agile Inseption": 0,
+            "Desing Spring": 0,
+            "OtraMAgil": 0,
+            "NingunaMAgil": 0,
+            "Cascada": 0,
+            "Prototipado": 0,
+            "Espiral": 0,
+            "Incremental": 0,
+            "Diseño Rapido": 0,
+            "OtraMTradicional": 0,
+            "NingunaMTradicional": 0,
+        }
+    ]
 
 
 app.add_middleware(
@@ -142,108 +246,8 @@ async def hello():
 async def predictValue():
     data = {
         "Inputs": {
-            "data": [
-                {
-                    "Nombre": "example_value",
-                    "null": 0,
-                    "almost_null": 0,
-                    "basic": 0,
-                    "intermediate": 0,
-                    "advanced": 0,
-                    "native": 1,
-                    "HTML": 1,
-                    "CSS": 1,
-                    "SaSS": 1,
-                    "JS": 1,
-                    "PHP": 1,
-                    "JAVA": 0,
-                    "TS": 1,
-                    "OtraHerramienta": 0,
-                    "NingunaHerramientaWeb": 0,
-                    "React": 1,
-                    "Vue": 1,
-                    "Angular": 0,
-                    "Ember": 0,
-                    "Backbone": 0,
-                    "Mercury": 0,
-                    "OtroFramework": 0,
-                    "NingunFramework": 0,
-                    "GitHub": 1,
-                    "GitLab": 1,
-                    "Google Cloud Sorse Repositories": 0,
-                    "GitKraken": 1,
-                    "OtroControldeVerciones": 0,
-                    "NingunControldeVerciones": 0,
-                    "Windows": 1,
-                    "MacOS": 1,
-                    "GNULinux": 1,
-                    "Otro": 0,
-                    "NingunOS": 0,
-                    "Azure": 1,
-                    "AWS": 0,
-                    "Heroku": 1,
-                    "GoogleCloud": 0,
-                    "Digital Ocean": 0,
-                    "Oracle Cloud": 0,
-                    "OtraComputoNube": 0,
-                    "NingunaComputoNube": 0,
-                    "SaaS": 1,
-                    "PaaS": 1,
-                    "IaaS/HaaS": 1,
-                    "BaaS": 0,
-                    "DaaS": 0,
-                    "OtroTipoDeSoftware": 0,
-                    "NingunSoftware": 0,
-                    "VSCode": 1,
-                    "IntelliJ Idea": 1,
-                    "PyCharm": 1,
-                    "Xcode": 1,
-                    "Eclipse": 1,
-                    "Sublime Text": 1,
-                    "VIM": 1,
-                    "OtroIDE": 0,
-                    "NingunIDE": 0,
-                    "FastAPI": 1,
-                    "Falcon": 0,
-                    "Eve": 0,
-                    "Hug": 0,
-                    "Web.py": 1,
-                    "Flask": 1,
-                    "OtraAPI": 0,
-                    "NigunaAPI": 0,
-                    "JavaScript": 1,
-                    "Python": 1,
-                    "PHPConsumo": 1,
-                    "JavaConsumo": 0,
-                    "Ruby": 0,
-                    "C#": 1,
-                    "OtraConsumo": 0,
-                    "NingunaConsumo": 0,
-                    "JSON": 1,
-                    "XML": 1,
-                    "HTMLInfo": 1,
-                    "CSV": 1,
-                    "RSS": 0,
-                    "OtroFormato": 0,
-                    "Ningun Formto": 0,
-                    "VariablesEntorno": 1,
-                    "Scrum": 1,
-                    "Kanban": 1,
-                    "XP": 0,
-                    "Agile Inseption": 1,
-                    "Desing Spring": 1,
-                    "OtraMAgil": 0,
-                    "NingunaMAgil": 0,
-                    "Cascada": 1,
-                    "Prototipado": 1,
-                    "Espiral": 1,
-                    "Incremental": 0,
-                    "Diseño Rapido": 0,
-                    "OtraMTradicional": 0,
-                    "NingunaMTradicional": 0,
-                }
-            ]
-        },
+            
+            },
         "GlobalParameters": 1.0,
     }
     body = str.encode(json.dumps(data))
