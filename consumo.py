@@ -155,6 +155,7 @@ try:
 
     result = response.read()
     print(result)
+    print(data)
 except urllib.error.HTTPError as error:
     print("The request failed with status code: " + str(error.code))
 
