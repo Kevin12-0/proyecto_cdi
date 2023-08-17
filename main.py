@@ -26,6 +26,7 @@ origins = ["*"]
 
 
 class inputData(BaseModel):
+    Nombre: str
     null: int
     almost_null: int
     basic: int
@@ -245,9 +246,7 @@ async def hello():
 @app.post("/prediction/")
 async def predictValue():
     data = {
-        "Inputs": {
-            
-            },
+        "Inputs": {data},
         "GlobalParameters": 1.0,
     }
     body = str.encode(json.dumps(data))
