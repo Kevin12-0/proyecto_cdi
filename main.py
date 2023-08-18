@@ -263,7 +263,8 @@ async def predictValue(features: features):
         response = urllib.request.urlopen(req)
 
         result = response.read()
-        print(data)
+        result = json.loads(result)
+        result = result["Results"]
         return result
     except Exception as e:
         print(e)
