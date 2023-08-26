@@ -4,6 +4,14 @@ from pydantic import BaseModel
 from fastapi.responses import JSONResponse
 from joblib import load
 from fastapi.middleware.cors import CORSMiddleware
+import azure.cosmos.documents as documents
+import azure.cosmos.cosmos_client as cosmos_client
+import azure.cosmos.exceptions as exceptions
+from azure.cosmos.partition_key import PartitionKey
+from sqlalchemy import create_engine, Column, Integer, String
+from sqlalchemy.orm import sessionmaker
+from sqlalchemy.ext.declarative import declarative_base
+import pymysql
 import urllib.request
 import json
 import os
@@ -19,6 +27,8 @@ def allowSelfSignedHttps(allowed):
     ):
         ssl._create_default_https_context = ssl._create_unverified_context
 
+
+ 
 
 allowSelfSignedHttps(True)
 app = FastAPI()
@@ -243,6 +253,7 @@ async def predictValue(features: features):
                 "NingunaMTradicional": features.NingunaMTradicional,
             }
         ]
+
         data = {
             "Inputs": {"data": values},
             "GlobalParameters": 1.0,
@@ -258,16 +269,12 @@ async def predictValue(features: features):
             "Authorization": ("Bearer " + api_key),
             "azureml-model-deployment": "automl8ca357b353-1",
         }
-
         req = urllib.request.Request(url, body, headers)
         response = urllib.request.urlopen(req)
-
         result = response.read()
         result = json.loads(result)
         result = result["Results"]
+        result = result[0]
         return result
     except Exception as e:
         print(e)
-        print(data)
-        return e
-    
